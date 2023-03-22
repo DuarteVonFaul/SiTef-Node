@@ -1,0 +1,24 @@
+{
+  "name": "sitef-node",
+  "version": "0.1.0",
+  "description": "Integração SiTef com NodeJs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DuarteVonFaul/SiTef-Node.git"
+  },
+  "author": "DuarteVonFaul (Guilherme Duarte Sousa)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DuarteVonFaul/SiTef-Node/issues"
+  },
+  "homepage": "https://github.com/DuarteVonFaul/SiTef-Node#readme",
+  "dependencies": {
+    "inquirer": "^9.1.5",
+    "node-addon-api": "^6.0.0",
+    "typescript": "^5.0.2"
+  }
+}
