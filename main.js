@@ -5,7 +5,7 @@ const Sitef = require('./build/Release/node-sitef.node');
 
 async function Promises() {
   try {
-    const result = await Sitef.pathDLL("C:\\Users\\Estagiario-03\\Desktop\\GitHub\\others\\softExpress\\app\\dll\\CliSiTef64I.dll");
+    const result = await Sitef.pathDLL("...\\app\\dll\\CliSiTef64I.dll");
     console.log(result);
     const result2 = await Sitef.configSiTef("127.0.0.1:4096",
                                             "00000000",
