@@ -133,16 +133,26 @@ void finallySiTef(int confirma, const char *cupomFiscal, const char *dataFiscal,
 
 Napi::Object Init(Napi::Env env, Napi::Object exports){
               
-  exports.Set(Napi::String::New(env, "pathDLL"), 
-              Napi::Function::New(env, pathDLL));
+    exports.Set(Napi::String::New(env, "pathDLL"), 
+                Napi::Function::New(env, pathDLL));
 
-  exports.Set(Napi::String::New(env, "configSiTef"),
-             Napi::Function::New(env, ConfigPromise::Create));
+    exports.Set(Napi::String::New(env, "configSiTef"),
+                Napi::Function::New(env, ConfigPromise::Create));
 
-  exports.Set(Napi::String::New(env, "initSiTef"),
-             Napi::Function::New(env, InitPromise::Create));
-  exports.Set(Napi::String::New(env, "woutPermanentPinPad"),
-             Napi::Function::New(env, WoutPinPadPromise::Create));
+    exports.Set(Napi::String::New(env, "initSiTef"),
+                Napi::Function::New(env, InitPromise::Create));
+
+    exports.Set(Napi::String::New(env, "woutPermanentPinPad"),
+                Napi::Function::New(env, WoutPinPadPromise::Create));
+
+    exports.Set(Napi::String::New(env, "finallySiTef"),
+                Napi::Function::New(env, FinallyPromise::Create));
+
+    exports.Set(Napi::String::New(env, "contSitef"),
+                Napi::Function::New(env, ContPromise::Create));
+
+    exports.Set(Napi::String::New(env, "binaryPinPad"),
+                Napi::Function::New(env, BinaryPinPadPromise::Create));
 
   
   return exports;

@@ -4,6 +4,9 @@
     #include "configPromise.cpp"
     #include "woutPinPadPromise.cpp"
     #include "initPromise.cpp"
+    #include "contPromise.cpp"
+    #include "finallyPromise.cpp"
+    #include "binaryPinPadPromise.cpp"
 
 
 #endif
